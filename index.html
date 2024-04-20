@@ -24,18 +24,37 @@
         <div class="container">
             <div class="d-sm-flex align-items-center justify-content-between">
                 <div>
-                    <p class="lead my-4">
-                        <ul>
-                            <li>Datum rođenja: 20. studenog 1999    </li>
-                            <li>Mjesto rođenja: <a href="https://hr.wikipedia.org/wiki/Osijek" target="_blank">Osijek</a></li>
-                            <li>Mjesto stanovanja:<a href="https://hr.wikipedia.org/wiki/Beli%C5%A1%C4%87e" target="_blank">Belišće</a></li>
-                            <li>Spol: Muški</li>
-                            <li>Hobi: <a href="https://hr.wikipedia.org/wiki/Powerlifting" target="_blank">Powerlifting</a></li>
+                    <div class="lead my-4">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-calendar-fill me-2"></i> Datum rođenja: 20. studenog 1999
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-geo-alt-fill me-2"></i> Mjesto rođenja: <a href="https://hr.wikipedia.org/wiki/Osijek" target="_blank">Osijek</a>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-geo-alt-fill me-2"></i> Mjesto stanovanja: <a href="https://hr.wikipedia.org/wiki/Beli%C5%A1%C4%87e" target="_blank">Belišće</a>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-envelope-fill me-2"></i> Email:robert.klanjscek123@gmail.com
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-people-fill me-2"></i> Spol:Muški
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-heart-fill me-2"></i> Hobi: <a href="https://hr.wikipedia.org/wiki/Powerlifting" target="_blank">Powerlifting</a>
+                            </li>
                         </ul>
-                    </p>
+                    </div>
+                    
 
                 </div>
-                <img class="thumbnail" src="Robert.jpg" alt="Slika" onclick="openPopup('Robert.jpg')">
+                
+                <div class="image-container">
+                    <img class="thumbnail" src="Robert.jpg" alt="Slika" onclick="openPopup('Robert.jpg')">
+                    <div class="extension">JPG</div>
+                </div>
+                
 
                 <!-- Popup za punu rezoluciju slike -->
                 <div id="popup" class="popup" onclick="closePopup()">
@@ -54,7 +73,10 @@
                     <div class="card bg-dark text-light">
                         <div class="card-body ">
                             <div class="h1 mb-3">
-                                <img class="thumbnail" src="ferit.png" alt="Slika" onclick="openPopup('ferit.png')">
+                                <div class="image-container">
+                                    <img class="thumbnail" src="ferit.png" alt="Slika" onclick="openPopup('ferit.png')">
+                                    <div class="extension">PNG</div>
+                                </div>
 
                                 <div id="popup" class="popup" onclick="closePopup()">
                                     <div class="popup-content">
@@ -83,7 +105,10 @@
                     <div class="card bg-secondary text-light">
                         <div class="card-body text-center">
                             <div class="h1 mb-3">
-                                <img class="thumbnail" src="work.bmp" alt="Slika" onclick="openPopup('work.bmp')">
+                                <div class="image-container">
+                                    <img class="thumbnail" src="work.bmp" alt="Slika" onclick="openPopup('work.bmp')">
+                                    <div class="extension">BMP</div>
+                                </div>
 
                                 <div id="popup" class="popup" onclick="closePopup()">
                                     <div class="popup-content">
@@ -101,8 +126,9 @@
                                       <li>Kabliranje</li>
                                       <li>Spajanje elektro motora / senzora</li>
                                       <li>Spajanja el. ormarića po nacrtu</li>
-                                      <li>Montaža i spajanje rasvjete, prekidači, utičnice</li>
                                     </ul>
+                                    <p></p>
+                                    Stručna praksa u <a href="https://danieli-systec.com/hr/" target="_blank">Danieli Systec</a> - Mjesec dana
                                   </li>
 
                                 
@@ -114,7 +140,10 @@
                     <div class="card bg-dark text-light">
                         <div class="card-body text-center">
                             <div class="h1 mb-3">
-                                <img class="thumbnail" src="program.gif" alt="Slika" onclick="openPopup('program.gif')">
+                                <div class="image-container">
+                                    <img class="thumbnail" src="program.gif" alt="Slika" onclick="openPopup('program.gif')">
+                                    <div class="extension">GIF</div>
+                                </div>
 
                                 <div id="popup" class="popup" onclick="closePopup()">
                                     <div class="popup-content">
@@ -144,7 +173,7 @@
     <section id="learn" class="p-5 bg-dark text-light">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <div class="col-md">
+                <div class="col-md text-center">
                       <audio controls>
                         <source src="MMTRekord.mp3" type="audio/mpeg">
                         Vaš browser ne podržava audio element.
@@ -152,10 +181,8 @@
                       </audio>
                     <h3>Kratko Predstavljanje</h3>
                 </div>
-                <div class="col-md p-5">
-
+                <div class="col-md p-5 text-center">
                     <p>
-
                         <video controls>
                             <source src="MMTFerit.mp4" type="video/mp4">
                             Vaš browser ne podržava video element.
@@ -173,13 +200,22 @@
 
       <footer class="p-3 bg-light text-dark text-center position-relative">
         <div class="container">
-            <p class="lead">
-                Copyright &copy; <p>Ova web stranica je izrađena za vrijeme pohađanja <a href="https://www.ferit.unios.hr/" target="_blank">Elektrotehničkog fakulteta</a> u Osijeku u sklopu kolegija <a href="https://moodle.srce.hr/2023-2024/course/view.php?id=163509" target="_blank">Multimedijska tehnika</a>.</p>
+            <h4>
+                <a href="https://yyemms.github.io/MMT-KV/index.html" target="_blank">Vratite se na početnu stranicu.</a>
+            </h4>
+            <h4>
+                Posjetite još: <a href="https://ivan-berlancic.github.io/ivanCV.html" target="_blank">Ivan Berlančić</a>
+                <a href="https://gongamesh.github.io/Stjepan/stjepan_profile.html" target="_blank">Stjepan Kovačević</a>
+                <a href="https://arac222.github.io/CVSite/luka_aracic.html" target="_blank">Luka Aračić</a>
+            </h4>
+
+            <h5 class="lead">
+                Copyright &copy; <p>Ova web stranica je izrađena za vrijeme pohađanja <a href="https://www.ferit.unios.hr/" target="_blank">Elektrotehničkog fakulteta</a> u Osijeku u sklopu kolegija <a href="https://www.ferit.unios.hr/upisi-i-studijski-programi/strucni-prijediplomski-studij#racunarstvo#SR6-02" target="_blank">Multimedijska tehnika</a>.</p>
 
                 <a href="#" class="position-absolute bottom-0 end-0 p-5">
                     <i class="bi bi-arrow-up-circle h1"></i>
                 </a>
-            </p>
+            </h5>
         </div>
       </footer>
 
