@@ -54,5 +54,16 @@ body {
     width: 100%;
   }
 
+  .extension {
+    position: absolute;
+    bottom: 5px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+}
+  .image-container {
+    position: relative;
+    text-align: center; /* To center the content horizontally */
+  }
+
 
 
